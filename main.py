@@ -48,7 +48,10 @@ if ans1 == "a":
                     print("Enemies peek you when the spike is halved, but you have no time to pull out your gun. You died, GAME OVER.")
                     print(f"Total kills: {kills}!")
                     print(f"Goodbye, {name}!")
-            
+                    
+                else:
+                    print("Thats not one of the choices")
+                    kills -= 1
             
             elif ans4 == "r":
                 print("The enemies saw you from backsite and headshots you. GAME OVER")
@@ -60,18 +63,34 @@ if ans1 == "a":
                 print(f"Total kills: {kills}!")
                 print(f"Goodbye, {name}!")
                 
+            else:
+                print("Thats not a awnser!")
+                kills -= 1
+                
         elif ans3 == "w":
             print("One enemy spotted you then you died. GAME OVER")
             print(f"Total kills: {kills}!")
             print(f"Goodbye, {name}!")
+        
+        else:
+            print("Thats not a awnser!")
+            kills -= 1
             
     elif ans2 == "p": # elif ans2
         print("The enemy team pushes backsite. You lose the gunfight and die. GAME OVER")
         print(f"Total kills: {kills}!")
         print(f"Goodbye, {name}!")
+    
+    else:
+        print("Thats not a awnser!")
+        kills -= 1
 
         
 elif ans1 == "b":
     print("The enemy lurker kills you by flanking you and you die. GAME OVER")
     print(f"Total kills: {kills}!")
     print(f"Goodbye, {name}!")
+    
+else:
+    print("Thats not a awnser!")
+    kills -= 1
